@@ -1,7 +1,7 @@
 
 def call(Map config){
 
-    echo "${config.test}, ${config.testing}"
+    git branch: config.test, url: config.testing
            
 }
 return this
