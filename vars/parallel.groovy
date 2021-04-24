@@ -1,4 +1,4 @@
-def call(Map config, Closure body) {
+def call(Map config) {
 	stage('parallel') {
 		steps {
 		      parallel(
@@ -7,16 +7,16 @@ def call(Map config, Closure body) {
 				      sleep 10
 			      },
 			      windows: {
-				      echo "Test config.win"
+				      echo "Test windows"
 				      sleep 10
 			      },
 			      unix: {
-				      echo "Test config.uni"
+				      echo "Test unix"
 				      sleep 10
 			      }
 		        )
 		}
-	  body()
+	 
 	}
 	
 }
