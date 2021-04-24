@@ -1,7 +1,8 @@
 
-def call(Map config){
+def call(Map config) {
 
-    echo " config.type, config.message"
+    echo config.type 
+    echo config.message
            
 }
 return this
