@@ -1,6 +1,6 @@
-def call(String buildType) {
+def call(Map config) {
       
-      if(buildType == 'release') {
+      if(config.buildType == 'release') {
               sh 'mvn package'
 //      } else {
 //            echo message
