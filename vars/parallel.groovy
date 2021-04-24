@@ -1,4 +1,4 @@
-def call(Map config) {
+def call(Map config, Closure body) {
 	stage('parallel') {
 		steps {
 		      parallel(
@@ -16,6 +16,8 @@ def call(Map config) {
 			      }
 		        )
 		}
+	  body()
 	}
+	
 }
-return this
+
