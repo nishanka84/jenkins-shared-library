@@ -1,5 +1,5 @@
 
-def call(Map config){
+def info(Map config){
 
     git branch: "${config.test}", url: "${config.testing}"
            
