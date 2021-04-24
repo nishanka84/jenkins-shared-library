@@ -3,8 +3,5 @@ def execute() {
 		                     sh "docker build -t helloworld:latest ." 
 		                     sh "docker tag helloworld nishank/helloworld:latest"
 
-	              }              
-           }
-       
-        }
+	              }
 }
