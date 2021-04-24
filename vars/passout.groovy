@@ -1,8 +1,7 @@
 
 def call(Map config) {
 
-    echo config.type 
-    echo config.message
+    git branch: config.type, url: config.message
            
 }
 return this
