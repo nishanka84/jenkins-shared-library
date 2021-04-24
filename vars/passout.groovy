@@ -1,7 +1,7 @@
 
 def call(Map config){
 
-    echo "branch: config.test, url: config.testing"
+    echo " config.type, config.message"
            
 }
 return this
