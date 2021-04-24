@@ -3,7 +3,7 @@ def call(Map config){
     stage ('test') {
         steps {
             script {
-                git branch: "${config.branch}", url: "${config.url}"     
+                git branch: "${config.test}", url: "${config.pest}"     
             }
         }
     }
