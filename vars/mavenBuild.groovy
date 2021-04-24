@@ -1,6 +1,10 @@
-def info(message) {
+def call1() {
       
-       echo "${message}"
-       sh 'mvn package'
+//      if(buildType == 'true') {
+              sh 'mvn package'
+//      } else {
+//            echo "${message}
+//      }
   
  }
+return this
