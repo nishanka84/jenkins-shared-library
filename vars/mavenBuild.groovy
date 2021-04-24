@@ -1,6 +1,6 @@
 def call(String buildType) {
       
-      if(config.buildType == 'release') {
+      if(buildType == 'release') {
               sh 'mvn package'
 //      } else {
 //            echo message
