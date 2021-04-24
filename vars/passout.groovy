@@ -1,9 +1,9 @@
 
-def call(){
+def call(String name = "master"){
     stage ('test') {
         steps {
             script {
-                git branch: "master", url: "https://github.com/devops4solutions/CI-CD-using-Docker.git"     
+                git branch: ${name}, url: https://github.com/nishanka84/HelloTesting-World    
             }
         }
     }
