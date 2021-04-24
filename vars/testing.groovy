@@ -1,5 +1,5 @@
 
-def call(Map config=[name:nishank]){
+def call(Map config=[:]){
 
     echo "My Name is ${config.name}"
     
