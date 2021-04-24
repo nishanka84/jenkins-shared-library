@@ -1,6 +1,10 @@
 
 def call(Map config){
-
-    git branch: "${config.branch}", url: "${config.url}"                   
-
+    stage ('test') {
+        steps {
+            script {
+                git branch: "${config.branch}", url: "${config.url}"     
+            }
+        }
+    }
 }
