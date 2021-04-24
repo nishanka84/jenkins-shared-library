@@ -1,4 +1,4 @@
-def info('message') {
+def info(message) {
       
        echo "${message}"
        sh 'mvn package'
