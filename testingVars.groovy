@@ -1,6 +1,6 @@
 
-def call(Map config=[:]){
+def call(String name = 'User'){
 
-    echo "My Name is ${config.name}"
+    echo "My Name is ${name}"
     
     }
