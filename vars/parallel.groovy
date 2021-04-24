@@ -1,4 +1,5 @@
 def call(Map config) {
+	steps {
 
 			parallel {
 			      ubuntu: {
@@ -14,6 +15,6 @@ def call(Map config) {
 				      sleep 10
 			      }
 			}
-	
+	 }
 }
 
