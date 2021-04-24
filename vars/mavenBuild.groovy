@@ -2,8 +2,8 @@ def call(Map config) {
       
       if(config.buildType == 'release') {
               sh 'mvn package'
-//      } else {
-//            echo message
+      } else {
+           echo config.message
       }
   
  }
