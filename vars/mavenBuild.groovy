@@ -1,9 +1,9 @@
-def call(String buildType, string message) {
+def call(String buildType) {
       
       if(config.buildType == 'release') {
               sh 'mvn package'
-      } else {
-            echo message
+//      } else {
+//            echo message
       }
   
  }
