@@ -1,6 +1,5 @@
 def call(Map config) {
-	stage('parallel') {
-		steps {
+
 			parallel {
 			      ubuntu: {
 				      echo "Test config.type"
@@ -15,9 +14,6 @@ def call(Map config) {
 				      sleep 10
 			      }
 			}
-		}
-	 
-	}
 	
 }
 
