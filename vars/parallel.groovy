@@ -3,7 +3,7 @@ def call(Map config) {
 		steps {
 		      parallel(
 			      ubuntu: {
-				      echo "Test config.ubun"
+				      echo "Test config.type"
 				      sleep 10
 			      },
 			      windows: {
