@@ -1,7 +1,7 @@
 
-def info(test){
+def call(Map config){
 
-    git branch: "${test}", url: "https://github.com/nishanka84/HelloTesting-World.git"
+    git branch: "${config.test}", url: "${config.testing}"
            
 }
 return this
