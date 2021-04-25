@@ -6,6 +6,6 @@ def kube(){
 		         } catch (err) {
 			       echo err.getStackTrace()
 		               currentBuild.result = "SUCCESS"
-			       currentStage.result = "FAILURE"
+			       currentStage.result = "UNSTABLE"
 		         }
 }
