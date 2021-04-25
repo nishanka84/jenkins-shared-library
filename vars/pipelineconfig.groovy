@@ -4,7 +4,7 @@ try{
       def exists = fileExists filename
       if (exists) {
         println "Config file [${workspace}/" + filename + "] found"
-        def file = readYaml file: filename  
+        def file = readFile file: filename  
         return file
       } else {
           println "Config file [${workspace}/" + filename + "] not found"
