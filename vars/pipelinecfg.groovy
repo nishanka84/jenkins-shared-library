@@ -17,6 +17,6 @@ try{
 }*/
 
 def call() {
-  Map pipelineCfg = readYaml(file: "${WORKSPACE}/config.yaml")
+  Map pipelineCfg = readFile(file: "${WORKSPACE}/config.yaml")
   return pipelineCfg
 }
