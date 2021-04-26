@@ -1,4 +1,4 @@
-def call(String filename) {
+/*def call(String filename) {
 try{
     dir ("${WORKSPACE}") {
       def exists = fileExists filename
@@ -14,4 +14,9 @@ try{
   } catch (err) {
       throw err
   }
+}*/
+
+def call() {
+  Map pipelineCfg = readYaml(file: "${WORKSPACE}/config.yaml")
+  return pipelineCfg
 }
