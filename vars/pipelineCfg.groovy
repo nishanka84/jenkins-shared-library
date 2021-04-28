@@ -1,6 +1,6 @@
 
-def call() {
-  def pipelineCfg = readFile(file: "${WORKSPACE}/config.yaml")
+Map call() {
+  Map pipelineCfg = readFile(file: "${WORKSPACE}/config.yaml")
   println pipelineCfg
   return pipelineCfg
 }
