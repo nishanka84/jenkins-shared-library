@@ -1,4 +1,4 @@
-def test(Map config){
+def call(Map config){
  
   //git url:"${config.gitUrl}", branch: "refs/heads/${config.type}"
   dir ("${env.WORKSPACE}") {
