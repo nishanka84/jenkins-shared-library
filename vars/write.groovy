@@ -1,6 +1,6 @@
-def test(Map config){
+def test(name){
  
- echo "Hello ${config.name}"
+ echo "Hello ${name}"
  /* git url:"${config.gitUrl}", branch: "refs/heads/${config.type}"
   dir ("${env.WORKSPACE}") {
   //  checkoutScm("${config.gitUrl}", "refs/heads/${config.branch}")
