@@ -1,5 +1,7 @@
-def call(Map config){
- // git url:"${config.gitUrl}", branch: "refs/heads/${config.type}"
+def test(Map config){
+ 
+   echo "Hello config.name"
+ /* git url:"${config.gitUrl}", branch: "refs/heads/${config.type}"
   dir ("${env.WORKSPACE}") {
   //  checkoutScm("${config.gitUrl}", "refs/heads/${config.branch}")
     writeFile file: "testing.txt", text: "${config.texting}"
@@ -10,6 +12,6 @@ def call(Map config){
                 sh("git push") 
             }
 
-  }  
+  }  */
   
 }
