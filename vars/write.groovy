@@ -1,5 +1,5 @@
 def call(Map config){
-  git url:"${config.gitUrl}", branch: "refs/heads/${config.type}")
+  git url:"${config.gitUrl}", branch: "refs/heads/${config.type}"
   dir ("${env.WORKSPACE}") {
     writeFile file: "testing.txt", text: "${config.texting}"
   sh 'cat testing.txt'
