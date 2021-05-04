@@ -4,7 +4,7 @@ def call(Map config){
     checkoutScm("${config.gitUrl}", "refs/heads/${config.branch}")
     writeFile file: "testing.txt", text: "${config.texting}"
   sh 'cat testing.txt'
-               sshagent(['git-id']) {
+               sshagent(['ec2-user']) {
                 sh("git add testing.txt")
                 sh("git commit -m 'Updated file'") 
                 sh("git push") 
