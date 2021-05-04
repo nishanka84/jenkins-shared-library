@@ -1,6 +1,7 @@
 def call(Map config){
   
   writeFile file: "${env.WORKSPACE}/testing.yaml", text: "config.texting."
-  sh 'cat ${env.WORKSPACE}/testing.yaml'
+  test = sh (cat "${env.WORKSPACE}/testing.yaml",returnStdout: true).trim()
+  println test
   
 }
